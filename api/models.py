@@ -9,6 +9,8 @@ from .managers import CustomUserManager
 
 # Create your models here.
 class User(AbstractBaseUser, PermissionsMixin):
+
+    # These fields tie to the roles!
     ADMIN = 1
     MANAGER = 2
     EMPLOYEE = 3
